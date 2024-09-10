@@ -2,9 +2,8 @@
 This module initializes the ITD-EPA package and provides access to the lambda_handler.
 """
 
+# pylint: disable=C0103
 from .lambda_function import handler
-
-__name__ = "itd_heroku_dyno"
 
 print("Initializing my ITD-EPA Package")
 
