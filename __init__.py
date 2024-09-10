@@ -1,10 +1,15 @@
-# __init__.py
+"""
+This module initializes the ITD-EPA package and provides access to the lambda_handler.
+"""
+
+from .lambda_function import handler
 
 print("Initializing my ITD-EPA Package")
 
-version = "1.0.0"
+VERSION = "1.0.0"
 
 def print_version():
-    print(f"Package version: {version}")
-
-from .lambda_function import lambda_handler
+    """
+    Prints the current version of the package.
+    """
+    print(f"Package version: {VERSION}")
