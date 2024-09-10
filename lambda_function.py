@@ -22,7 +22,7 @@ def handler():
     location_data = process_event(event)
 
     if not location_data:
-        return generate_response(404, 
+        return generate_response(404,
                'Missing required parameters for returning the PWS.',
                event, True)
 
@@ -30,19 +30,19 @@ def handler():
     lat, lng, state = location_data
 
     if not lat or not lng:
-        return generate_response(404, 
+        return generate_response(404,
                'Missing required parameters for returning the PWS. Geocoordinates missing.',
                event, True)
 
     if not state:
-        return generate_response(404, 
+        return generate_response(404,
                'Missing required parameters for returning the PWS. State missing.',
                event, True)
 
     search_result = search_pws(lat, lng, state)
 
     if not search_result:
-        return generate_response(404, 
+        return generate_response(404,
                'Unable to find a location for the given Geocoordinates and state.',
                event, True)
 
