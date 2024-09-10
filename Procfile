@@ -1,0 +1,1 @@
+web: gunicorn lambda_function:app
