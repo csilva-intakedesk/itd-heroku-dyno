@@ -4,6 +4,8 @@ This module initializes the ITD-EPA package and provides access to the lambda_ha
 
 from .lambda_function import handler
 
+__name__ = "itd_heroku_dyno"
+
 print("Initializing my ITD-EPA Package")
 
 VERSION = "1.0.0"

@@ -5,7 +5,7 @@ and state are part of a given PWS shape.
 
 import json
 from flask import Flask, request
-import bbox_text
+from . import bbox_text
 
 app = Flask(__name__)
 
