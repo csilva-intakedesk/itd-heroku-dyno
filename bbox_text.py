@@ -3,7 +3,7 @@ This module provides functions for geographic and projected coordinate conversio
 and for checking if a point is within a shapefile's geometry.
 """
 
-import shapefile, json
+import shapefile
 from shapely.geometry import shape, Point
 from pyproj import Transformer
 
@@ -57,7 +57,8 @@ def is_point_in_shapefile(shapefile_path, point, state):
     state : str
         The state to filter shapes by (e.g., "GA").
     Returns:
-    bool : True if the point is within any shape's bounding box in the specified state, False otherwise
+    bool : True if the point is within any shape's bounding box in the specified state, 
+    False otherwise
     """
 
     # Read the shapefile
@@ -67,13 +68,12 @@ def is_point_in_shapefile(shapefile_path, point, state):
         # Get the point's longitude and latitude
         x, y = convert_to_projected(point)
         point_proj = Point(x, y)
-        
+
         # Get the field names and find the index of the state field
         fields = sf.fields[1:]  # Skip the first deletion flag field
         field_names = [field[0] for field in fields]
-        state_index = field_names.index("State") 
-        pws_index = field_names.index("PWSID") 
-        
+        state_index = field_names.index("State")
+
         # Iterate through each shape record
         for shape_record in sf.iterShapeRecords():
             # Check if the shape's state matches the specified state
