@@ -1,3 +1,5 @@
+[![Pylint](https://github.com/csilva-intakedesk/itd-heroku-dyno/actions/workflows/pylint.yml/badge.svg?branch=main)](https://github.com/csilva-intakedesk/itd-heroku-dyno/actions/workflows/pylint.yml)
+
 # ITD EPA GIS Lambda Layer
 
 ## Requires
