@@ -1,5 +1,5 @@
 [![Pylint](https://github.com/csilva-intakedesk/itd-heroku-dyno/actions/workflows/pylint.yml/badge.svg?branch=main)](https://github.com/csilva-intakedesk/itd-heroku-dyno/actions/workflows/pylint.yml)
-
+[![CodeQL Advanced](https://github.com/csilva-intakedesk/itd-heroku-dyno/actions/workflows/codeql.yml/badge.svg)](https://github.com/csilva-intakedesk/itd-heroku-dyno/actions/workflows/codeql.yml)
 # ITD EPA GIS Lambda Layer
 
 ## Requires
