@@ -26,8 +26,8 @@ Clone the repository
 Use Git to clone itd-sf's source code to your local machine.
 
 ```bash
-$ heroku git:clone -a itd-sf
-$ cd itd-sf
+$ heroku git:clone -a your-heroku-git-repo-app
+$ cd your-heroku-git-repo-app
 ```
 
 Deploy your changes
